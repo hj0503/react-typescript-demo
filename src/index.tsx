@@ -1,5 +1,5 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import Hello from '../src/components/Hello'
+import RouteMap from '../src/router/RouteMap'
 
-ReactDOM.render(<Hello/>, document.getElementById('app'));
+ReactDOM.render(<RouteMap/>, document.getElementById('app'));
