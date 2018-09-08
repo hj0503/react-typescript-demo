@@ -8,6 +8,7 @@ const path = require('path');
           filename: 'bundle.[hash].js',
           path: path.join(__dirname, '/dist')
       },
+      css?modules&localIdentName=[name]__[local]-[hash:base64:5],
       resolve: {
         extensions: ['.jsx', '.js', '.ts', '.tsx', '.json', '.scss', '.css']
       },
@@ -18,8 +19,8 @@ const path = require('path');
       module: {
           rules: [
               {
-                  test: /\.css$/,
-                  use: ['style-loader', 'css-loader']
+                  test: /\.less$/,
+                  use: ['style-loader', 'css-loader', 'less-loader']
               },
               {
                 test: /\.jsx$/,
